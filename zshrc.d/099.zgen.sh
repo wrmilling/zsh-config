@@ -33,7 +33,8 @@ if ! zgen saved; then
   zgen load martinlindhe/base16-iterm2
 
   # After Custom Plugins Load
-  zgen prezto ssh
+  #zgen prezto ssh
+  #zgen prezto gpg
 
   # Misc Plugins
   zgen load unixorn/autoupdate-zgen
