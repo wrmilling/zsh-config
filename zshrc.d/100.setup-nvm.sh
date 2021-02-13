@@ -5,7 +5,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias nvm="unalias nvm; [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"; nvm $@"
 elif [ -f "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
-else 
+elif [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 fi
