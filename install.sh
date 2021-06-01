@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 echo "Linking zsh config"
 ln -s ~/.zsh/zshrc ~/.zshrc
